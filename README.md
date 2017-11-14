@@ -1,3 +1,3 @@
-# Vue.js
+# Vue.js + KendoUI
 
-Projet permettant d'expérimenter le framework Vue.js
+Projet permettant d'expérimenter l'utilisation de KendoUI avec le framework Vue.js.

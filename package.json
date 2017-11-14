@@ -1,11 +1,46 @@
 {
-  "name": "vuejs",
+  "name": "vuejs-kendoui",
+  "description": "Vue.js + KendoUI",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "author": "legal-s <legal-s@mgdis.fr>",
+  "license": "MIT",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
   },
-  "author": "",
-  "license": "ISC"
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ],
+  "devDependencies": {
+    "@progress/kendo-dateinputs-vue-wrapper": "^2017.3.1026",
+    "@progress/kendo-grid-vue-wrapper": "^2017.3.1026",
+    "@progress/kendo-theme-default": "^2.44.0",
+    "@progress/kendo-ui": "^2017.3.1026",
+    "axios": "^0.17.1",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-stage-3": "^6.24.1",
+    "compression-webpack-plugin": "^1.0.1",
+    "cross-env": "^5.0.5",
+    "css-loader": "^0.28.7",
+    "es6-promise": "^4.1.1",
+    "expose-loader": "^0.7.3",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.4",
+    "vue": "^2.4.4",
+    "vue-loader": "^13.0.5",
+    "vue-router": "^3.0.1",
+    "vue-template-compiler": "^2.4.4",
+    "vuex": "^3.0.1",
+    "vuex-router-sync": "^5.0.0",
+    "webpack": "^3.6.0",
+    "webpack-dev-server": "^2.9.1",
+    "webpack-merge": "^4.1.1",
+    "webpack-node-externals": "^1.6.0"
+  }
 }
