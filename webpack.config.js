@@ -3,6 +3,11 @@ const webpack = require('webpack');
 const CompressionPlugin = require('compression-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
+const extractLess = new ExtractTextPlugin({
+  filename: "[name].[contenthash].css",
+  disable: process.env.NODE_ENV === "development"
+});
+
 module.exports = {
   entry: './src/entry-client.js',
   output: {
@@ -13,12 +18,23 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.less$/,
+        use: [{
+          loader: "style-loader"
+        }, {
+          loader: "css-loader"
+        }, {
+          loader: "less-loader"
+        }]
+      },
+      {
         test: /\.css$/,
         use: [
           'vue-style-loader',
           'css-loader'
         ],
-      }, {
+      },
+      {
         test: /\.vue$/,
         loader: 'vue-loader',
         options: {

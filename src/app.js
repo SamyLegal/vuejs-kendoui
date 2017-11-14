@@ -4,7 +4,14 @@ import {createRouter} from './router';
 import {createStore} from './store';
 import {sync} from 'vuex-router-sync';
 
-// Kendo UI
+// Bootstrap - Less
+import './bootstrap.less';
+
+// Kendo UI - Less
+import "../node_modules/@progress/kendo-ui/css/web/kendo.common-bootstrap.less";
+import "../node_modules/@progress/kendo-ui/css/web/kendo.bootstrap.less";
+
+// Kendo UI - Js
 import '@progress/kendo-ui/js/kendo.core';
 import '@progress/kendo-ui/js/kendo.popup';
 import '@progress/kendo-ui/js/kendo.datepicker';
@@ -14,9 +21,6 @@ import {KendoDatePicker, KendoDateinputsInstaller} from '@progress/kendo-dateinp
 Vue.use(KendoDateinputsInstaller);
 import {KendoGrid, KendoGridInstaller} from '@progress/kendo-grid-vue-wrapper';
 Vue.use(KendoGridInstaller);
-
-// Css
-import '@progress/kendo-theme-default/dist/all.css'
 
 // Création d'une fonction factory "createApp"
 // pour créer de nouvelles instances de l'application,
