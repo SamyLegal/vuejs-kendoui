@@ -3,9 +3,8 @@
 
     <h1>{{msg}}</h1>
 
-    <router-link to="/date-picker">Date-picker</router-link>
+    <router-link to="/form-view">Formulaire</router-link>
     <router-link to="/grid">Grid</router-link>
-    <router-link to="/items/1">Items 1</router-link>
     <router-view></router-view>
 
   </div>
@@ -13,7 +12,7 @@
 
 <script>
   // Composants
-  import DatePicker from './DatePicker.vue';
+  import FormView from './FormView.vue';
   import Grid from './Grid.vue';
 
   export default {
@@ -24,7 +23,7 @@
       }
     },
     components: {
-      DatePicker,
+      FormView,
       Grid
     }
   }

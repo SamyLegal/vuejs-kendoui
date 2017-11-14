@@ -5,6 +5,7 @@ import {createStore} from './store';
 import {sync} from 'vuex-router-sync';
 
 // Bootstrap - Less
+// import 'bootstrap/less/bootstrap.less'
 import './bootstrap.less';
 
 // Kendo UI - Less
@@ -21,6 +22,10 @@ import {KendoDatePicker, KendoDateinputsInstaller} from '@progress/kendo-dateinp
 Vue.use(KendoDateinputsInstaller);
 import {KendoGrid, KendoGridInstaller} from '@progress/kendo-grid-vue-wrapper';
 Vue.use(KendoGridInstaller);
+
+// VueStrap
+import Alert from 'vue-strap/src/Alert';
+import Modal from 'vue-strap/src/Modal';
 
 // Création d'une fonction factory "createApp"
 // pour créer de nouvelles instances de l'application,
@@ -49,7 +54,9 @@ export function createApp() {
     components: {
       App,
       KendoDatePicker,
-      KendoGrid
+      KendoGrid,
+      Alert,
+      Modal
     }
   });
 

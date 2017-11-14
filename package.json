@@ -17,7 +17,7 @@
   "devDependencies": {
     "@progress/kendo-dateinputs-vue-wrapper": "^2017.3.1026",
     "@progress/kendo-grid-vue-wrapper": "^2017.3.1026",
-    "@progress/kendo-theme-default": "^2.44.0",
+    "@progress/kendo-inputs-vue-wrapper": "^2017.3.1026",
     "@progress/kendo-ui": "^2017.3.1026",
     "axios": "^0.17.1",
     "babel-core": "^6.26.0",
@@ -39,6 +39,7 @@
     "vue": "^2.4.4",
     "vue-loader": "^13.0.5",
     "vue-router": "^3.0.1",
+    "vue-strap": "^1.1.40",
     "vue-template-compiler": "^2.4.4",
     "vuex": "^3.0.1",
     "vuex-router-sync": "^5.0.0",

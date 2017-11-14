@@ -7,9 +7,8 @@ export function createRouter() {
   return new Router({
     mode: 'history',
     routes: [
-      { path: '/date-picker', component: () => import('./components/DatePicker.vue') },
-      { path: '/grid', component: () => import('./components/Grid.vue') },
-      { path: '/items/:id', component: () => import('./components/Item.vue') }
+      { path: '/form-view', component: () => import('./components/FormView.vue') },
+      { path: '/grid', component: () => import('./components/Grid.vue') }
     ]
   })
 }
